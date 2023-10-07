@@ -14,6 +14,7 @@ using namespace std;
 typedef map<string, string> Section;
 typedef map<string, Section> Sections;
 
+// the trim functions has been borrowed from Evan Teran's answer on StackOverflow: https://stackoverflow.com/a/217605/12550134
 // trim from start
 static inline std::string &ltrim(std::string &s) {
     s.erase(s.begin(), std::find_if(s.begin(), s.end(),
